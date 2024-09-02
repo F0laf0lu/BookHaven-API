@@ -35,7 +35,7 @@ class AddtoCartView(generics.CreateAPIView):
         serializer.save(cart=cart)
 
 
-class CartCount(generics.GenericAPIView):
+class CartCount(APIView):
     def get(self, request, *args, **kwargs):
         cart_id = request.session.get('cart_id', None)
         if not cart_id:
