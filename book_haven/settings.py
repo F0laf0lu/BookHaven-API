@@ -98,7 +98,7 @@ WSGI_APPLICATION = 'book_haven.wsgi.application'
 # }
 
 DATABASES = {
-    'default':  dj_database_url.config(default='DB_URL'),
+    'default':  dj_database_url.config('DATABASE_URL'),
 }
 
 # DATABASES = {
