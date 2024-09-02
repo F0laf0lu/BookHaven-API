@@ -1,10 +1,10 @@
 import requests
-
+from decouple import config
 
 class PayStack:
 
     BASE_URL = 'https://api.paystack.co/transaction'
-    PAYSTACK_SK = 'sk_test_1b60305d6d910d71d16db6442a436034c671f9be'
+    PAYSTACK_SK = config('PAYSTACK_SK')
 
     def initiate_payment(self, email, amount, **kwargs):
         path = '/initialize'

@@ -175,9 +175,8 @@ CORS_ALLOW_CREDENTIALS = True
 
 
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(days=1),  # Set the access token lifetime
-    'REFRESH_TOKEN_LIFETIME': timedelta(days=5),  # Set the refresh token lifetime
-    'ROTATE_REFRESH_TOKENS': False,  # Optionally rotate refresh tokens on every use
-    'BLACKLIST_AFTER_ROTATION': True,  # Optionally blacklist tokens after rotation
-    # Other configurations...
+    'ACCESS_TOKEN_LIFETIME': timedelta(days=1),  
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=5),
+    'ROTATE_REFRESH_TOKENS': False,  
+    'BLACKLIST_AFTER_ROTATION': True,  
 }
